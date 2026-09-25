@@ -93,44 +93,44 @@
          LOGIN
     ====================================================== -->
 
-    <section id="login" class="pantalla">
+   <section id="login" class="pantalla">
 
-        <div class="login-contenedor">
+    <div class="login-contenedor">
 
-            <div class="login-logo">
-                <span class="logo-icon">S</span>
-                <h1>SIGAP</h1>
-                <p>Inicio de sesión</p>
-            </div>
-
-            <form class="formulario">
-
-                <label>Correo electrónico</label>
-                <input type="email" placeholder="Ingrese su correo">
-
-                <label>Contraseña</label>
-                <input type="password" placeholder="Ingrese su contraseña">
-
-                <a href="#recuperar" class="link">
-                    ¿Olvidó su contraseña?
-                </a>
-
-                <a href="#dashboard" class="btn btn-principal btn-completo">
-                    Ingresar
-                </a>
-
-            </form>
-
-            <p class="registro">
-                ¿No tiene una cuenta?
-                <a href="#registro">Registrarse</a>
-            </p>
-
-            <a href="#inicio" class="volver">← Volver al inicio</a>
-
+        <div class="login-logo">
+            <span class="logo-icon">S</span>
+            <h1>SIGAP</h1>
+            <p>Inicio de sesión</p>
         </div>
 
-    </section>
+        <form class="formulario" id="form-login">
+
+            <label>Correo electrónico</label>
+            <input type="email" id="login-correo" placeholder="Ingrese su correo" required>
+
+            <label>Contraseña</label>
+            <input type="password" id="login-contrasena" placeholder="Ingrese su contraseña" required minlength="6">
+
+            <a href="#recuperar" class="link">
+                ¿Olvidó su contraseña?
+            </a>
+
+            <button type="submit" class="btn btn-principal btn-completo">
+                Ingresar
+            </button>
+
+        </form>
+
+        <p class="registro">
+            ¿No tiene una cuenta?
+            <a href="#registro">Registrarse</a>
+        </p>
+
+        <a href="#inicio" class="volver">← Volver al inicio</a>
+
+    </div>
+
+</section>
 
 
     <!-- =====================================================
@@ -1452,6 +1452,7 @@
 
     </section>
 
-
+<script src="assets/dashboard/js/script.js"></script>
+    
 </body>
 </html>
