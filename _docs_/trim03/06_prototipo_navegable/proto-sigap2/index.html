@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGAP - Sistema de Gestión Administrativa de Productos</title>
+    <link rel="stylesheet" href="assets/dashboard/css/styles.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         PANTALLA DE INICIO
+    ====================================================== -->
+
+    <section id="inicio" class="pantalla activa">
+
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">S</span>
+                <div>
+                    <h1>SIGAP</h1>
+                    <p>Sistema de Gestión Administrativa de Productos</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="inicio-contenido">
+
+            <div class="bienvenida">
+                <span class="etiqueta">PROTOTIPO SIGAP</span>
+
+                <h2>
+                    Sistema Integral de
+                    <strong>Gestión Administrativa</strong>
+                </h2>
+
+                <p>
+                    Plataforma para la gestión de usuarios, productos,
+                    ventas, pedidos y PQR.
+                </p>
+
+                <a href="#login" class="btn btn-principal">
+                    Iniciar sesión
+                </a>
+            </div>
+
+            <div class="tarjetas-modulos">
+
+                <div class="tarjeta-modulo">
+                    <span>👤</span>
+                    <h3>Usuarios</h3>
+                    <p>Gestión de cuentas y perfiles.</p>
+                </div>
+
+                <div class="tarjeta-modulo">
+                    <span>🛒</span>
+                    <h3>Ventas</h3>
+                    <p>Administración de compras y ventas.</p>
+                </div>
+
+                <div class="tarjeta-modulo">
+                    <span>📦</span>
+                    <h3>Productos</h3>
+                    <p>Control y consulta de productos.</p>
+                </div>
+
+                <div class="tarjeta-modulo">
+                    <span>🚚</span>
+                    <h3>Pedidos</h3>
+                    <p>Seguimiento de pedidos.</p>
+                </div>
+
+                <div class="tarjeta-modulo">
+                    <span>💬</span>
+                    <h3>PQR</h3>
+                    <p>Petición, queja y reclamo.</p>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <p>© 2026 SIGAP - Prototipo académico</p>
+        </footer>
+
+    </section>
+
+
+    <!-- =====================================================
+         LOGIN
+    ====================================================== -->
+
+    <section id="login" class="pantalla">
+
+        <div class="login-contenedor">
+
+            <div class="login-logo">
+                <span class="logo-icon">S</span>
+                <h1>SIGAP</h1>
+                <p>Inicio de sesión</p>
+            </div>
+
+            <form class="formulario">
+
+                <label>Correo electrónico</label>
+                <input type="email" placeholder="Ingrese su correo">
+
+                <label>Contraseña</label>
+                <input type="password" placeholder="Ingrese su contraseña">
+
+                <a href="#recuperar" class="link">
+                    ¿Olvidó su contraseña?
+                </a>
+
+                <a href="#dashboard" class="btn btn-principal btn-completo">
+                    Ingresar
+                </a>
+
+            </form>
+
+            <p class="registro">
+                ¿No tiene una cuenta?
+                <a href="#registro">Registrarse</a>
+            </p>
+
+            <a href="#inicio" class="volver">← Volver al inicio</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         RECUPERAR CONTRASEÑA
+    ====================================================== -->
+
+    <section id="recuperar" class="pantalla">
+
+        <div class="form-contenedor">
+
+            <span class="icono-grande">🔐</span>
+
+            <h2>Recuperar contraseña</h2>
+
+            <p>
+                Ingrese su correo electrónico para recuperar
+                el acceso a su cuenta.
+            </p>
+
+            <form class="formulario">
+
+                <label>Correo electrónico</label>
+
+                <input
+                    type="email"
+                    placeholder="ejemplo@correo.com"
+                >
+
+                <a href="#login" class="btn btn-principal btn-completo">
+                    Recuperar contraseña
+                </a>
+
+            </form>
+
+            <a href="#login" class="volver">
+                ← Volver al inicio de sesión
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         REGISTRO DE USUARIO
+    ====================================================== -->
+
+    <section id="registro" class="pantalla">
+
+        <div class="form-contenedor grande">
+
+            <div class="titulo-pantalla">
+                <span class="icono">👤</span>
+                <div>
+                    <h2>Registrar usuario</h2>
+                    <p>Crear una nueva cuenta en SIGAP</p>
+                </div>
+            </div>
+
+            <form class="formulario formulario-grid">
+
+                <div>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre">
+                </div>
+
+                <div>
+                    <label>Apellidos</label>
+                    <input type="text" placeholder="Apellidos">
+                </div>
+
+                <div>
+                    <label>Tipo de documento</label>
+                    <select>
+                        <option>Seleccione</option>
+                        <option>Cédula de ciudadanía</option>
+                        <option>Tarjeta de identidad</option>
+                        <option>Cédula de extranjería</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Número de documento</label>
+                    <input type="text" placeholder="Número de documento">
+                </div>
+
+                <div>
+                    <label>Correo electrónico</label>
+                    <input type="email" placeholder="Correo">
+                </div>
+
+                <div>
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Teléfono">
+                </div>
+
+                <div>
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="Contraseña">
+                </div>
+
+                <div>
+                    <label>Confirmar contraseña</label>
+                    <input type="password" placeholder="Confirmar contraseña">
+                </div>
+
+            </form>
+
+            <div class="acciones">
+                <a href="#login" class="btn btn-secundario">
+                    Cancelar
+                </a>
+
+                <a href="#login" class="btn btn-principal">
+                    Registrar usuario
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DASHBOARD
+    ====================================================== -->
+
+    <section id="dashboard" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+
+                <div>
+                    <h1>SIGAP</h1>
+                    <p>Panel administrativo</p>
+                </div>
+            </div>
+
+            <div class="usuario-header">
+                <span>👤</span>
+                <div>
+                    <strong>Usuario SIGAP</strong>
+                    <small>Administrador</small>
+                </div>
+
+                <a href="#inicio" class="cerrar-sesion">
+                    Cerrar sesión
+                </a>
+            </div>
+
+        </header>
+
+
+        <div class="app-layout">
+
+            <aside class="sidebar">
+
+                <p class="menu-titulo">MENÚ PRINCIPAL</p>
+
+                <a href="#dashboard" class="menu-item activo-menu">
+                    🏠 Dashboard
+                </a>
+
+                <a href="#usuarios" class="menu-item">
+                    👤 Usuarios
+                </a>
+
+                <a href="#productos" class="menu-item">
+                    📦 Productos
+                </a>
+
+                <a href="#ventas" class="menu-item">
+                    🛒 Ventas
+                </a>
+
+                <a href="#pedidos" class="menu-item">
+                    🚚 Pedidos
+                </a>
+
+                <a href="#pqr" class="menu-item">
+                    💬 PQR
+                </a>
+
+            </aside>
+
+
+            <main class="contenido-app">
+
+                <div class="titulo-seccion">
+                    <div>
+                        <h2>Dashboard</h2>
+                        <p>Resumen general del sistema</p>
+                    </div>
+                </div>
+
+
+                <div class="estadisticas">
+
+                    <div class="estadistica">
+                        <span>👤</span>
+                        <div>
+                            <small>Usuarios</small>
+                            <strong>125</strong>
+                        </div>
+                    </div>
+
+                    <div class="estadistica">
+                        <span>📦</span>
+                        <div>
+                            <small>Productos</small>
+                            <strong>48</strong>
+                        </div>
+                    </div>
+
+                    <div class="estadistica">
+                        <span>🛒</span>
+                        <div>
+                            <small>Ventas</small>
+                            <strong>86</strong>
+                        </div>
+                    </div>
+
+                    <div class="estadistica">
+                        <span>🚚</span>
+                        <div>
+                            <small>Pedidos</small>
+                            <strong>17</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-grid">
+
+                    <div class="panel">
+
+                        <div class="panel-titulo">
+                            <h3>Accesos rápidos</h3>
+                        </div>
+
+                        <div class="accesos">
+
+                            <a href="#registrar-producto">
+                                <span>📦</span>
+                                Registrar producto
+                            </a>
+
+                            <a href="#registrar-venta">
+                                <span>🛒</span>
+                                Registrar venta
+                            </a>
+
+                            <a href="#registrar-pedido">
+                                <span>🚚</span>
+                                Registrar pedido
+                            </a>
+
+                            <a href="#registrar-pqr">
+                                <span>💬</span>
+                                Registrar PQR
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="panel">
+
+                        <div class="panel-titulo">
+                            <h3>Actividad reciente</h3>
+                        </div>
+
+                        <div class="actividad">
+                            <p>📦 Producto actualizado</p>
+                            <p>🛒 Nueva venta registrada</p>
+                            <p>🚚 Pedido actualizado</p>
+                            <p>👤 Nuevo usuario registrado</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         USUARIOS
+    ====================================================== -->
+
+    <section id="usuarios" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="#dashboard" class="btn btn-secundario">
+                ← Dashboard
+            </a>
+
+        </header>
+
+        <main class="contenido-app">
+
+            <div class="titulo-seccion">
+
+                <div>
+                    <h2>Gestión de usuarios</h2>
+                    <p>Administración de usuarios registrados</p>
+                </div>
+
+                <a href="#registro" class="btn btn-principal">
+                    + Registrar usuario
+                </a>
+
+            </div>
+
+
+            <div class="tabla-contenedor">
+
+                <div class="busqueda">
+                    <input
+                        type="text"
+                        placeholder="🔎 Buscar usuario..."
+                    >
+                </div>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>001</td>
+                            <td>Juan Pérez</td>
+                            <td>juan@email.com</td>
+                            <td>Administrador</td>
+                            <td><span class="estado activo">Activo</span></td>
+                            <td>👁️ ✏️</td>
+                        </tr>
+
+                        <tr>
+                            <td>002</td>
+                            <td>María López</td>
+                            <td>maria@email.com</td>
+                            <td>Empleado</td>
+                            <td><span class="estado activo">Activo</span></td>
+                            <td>👁️ ✏️</td>
+                        </tr>
+
+                        <tr>
+                            <td>003</td>
+                            <td>Carlos Gómez</td>
+                            <td>carlos@email.com</td>
+                            <td>Cliente</td>
+                            <td><span class="estado inactivo">Inactivo</span></td>
+                            <td>👁️ ✏️</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- =====================================================
+         PRODUCTOS
+    ====================================================== -->
+
+    <section id="productos" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="#dashboard" class="btn btn-secundario">
+                ← Dashboard
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="titulo-seccion">
+
+                <div>
+                    <h2>Productos</h2>
+                    <p>Catálogo y administración de productos</p>
+                </div>
+
+                <a href="#registrar-producto" class="btn btn-principal">
+                    + Registrar producto
+                </a>
+
+            </div>
+
+
+            <div class="filtros">
+
+                <input
+                    type="text"
+                    placeholder="🔎 Buscar producto..."
+                >
+
+                <select>
+                    <option>Todos los tipos</option>
+                    <option>Panela cuadrada</option>
+                    <option>Panela redonda</option>
+                    <option>Panela pulverizada</option>
+                    <option>Panela granulada</option>
+                    <option>Panela en cubos</option>
+                    <option>Panela saborizada</option>
+                </select>
+
+                <select>
+                    <option>Todos los estados</option>
+                    <option>Disponible</option>
+                    <option>Agotado</option>
+                    <option>Inactivo</option>
+                </select>
+
+            </div>
+
+
+            <div class="productos-grid">
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-001</span>
+                        <h3>Panela cuadrada</h3>
+                        <p>Panela tradicional de bloque cuadrado.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$5.000</strong>
+                            <span>Stock: 120</span>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-002</span>
+                        <h3>Panela redonda</h3>
+                        <p>Panela tradicional en presentación redonda.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$5.500</strong>
+                            <span>Stock: 85</span>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-003</span>
+                        <h3>Panela pulverizada</h3>
+                        <p>Panela pulverizada de fácil preparación.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$8.000</strong>
+                            <span>Stock: 64</span>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-004</span>
+                        <h3>Panela granulada</h3>
+                        <p>Panela granulada para bebidas y preparaciones.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$7.500</strong>
+                            <span>Stock: 92</span>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-005</span>
+                        <h3>Panela en cubos</h3>
+                        <p>Panela presentada en pequeños cubos.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$6.500</strong>
+                            <span>Stock: 70</span>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-006</span>
+                        <h3>Panela saborizada</h3>
+                        <p>Panela con diferentes sabores y presentaciones.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$9.000</strong>
+                            <span>Stock: 45</span>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- =====================================================
+         REGISTRAR PRODUCTO
+    ====================================================== -->
+
+    <section id="registrar-producto" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="#productos" class="btn btn-secundario">
+                ← Productos
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="form-contenedor grande">
+
+                <div class="titulo-pantalla">
+                    <span class="icono">📦</span>
+
+                    <div>
+                        <h2>Registrar producto</h2>
+                        <p>Agregar un nuevo producto al catálogo</p>
+                    </div>
+                </div>
+
+
+                <form class="formulario formulario-grid">
+
+                    <div>
+                        <label>Código del producto</label>
+                        <input type="text" placeholder="PROD-000">
+                    </div>
+
+                    <div>
+                        <label>Nombre del producto</label>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+
+                    <div>
+                        <label>Tipo de panela</label>
+
+                        <select>
+                            <option>Seleccione</option>
+                            <option>Panela cuadrada</option>
+                            <option>Panela redonda</option>
+                            <option>Panela pulverizada</option>
+                            <option>Panela granulada</option>
+                            <option>Panela en cubos</option>
+                            <option>Panela saborizada</option>
+                        </select>
+
+                    </div>
+
+                    <div>
+                        <label>Precio</label>
+                        <input type="number" placeholder="$">
+                    </div>
+
+                    <div>
+                        <label>Cantidad inicial</label>
+                        <input type="number" placeholder="Cantidad">
+                    </div>
+
+                    <div>
+                        <label>Estado</label>
+
+                        <select>
+                            <option>Disponible</option>
+                            <option>Agotado</option>
+                            <option>Inactivo</option>
+                        </select>
+
+                    </div>
+
+                    <div class="campo-completo">
+
+                        <label>Descripción</label>
+
+                        <textarea
+                            placeholder="Descripción del producto"
+                        ></textarea>
+
+                    </div>
+
+                </form>
+
+
+                <div class="acciones">
+
+                    <a href="#productos" class="btn btn-secundario">
+                        Cancelar
+                    </a>
+
+                    <a href="#productos" class="btn btn-principal">
+                        Registrar producto
+                    </a>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- =====================================================
+         VENTAS
+    ====================================================== -->
+
+    <section id="ventas" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="#dashboard" class="btn btn-secundario">
+                ← Dashboard
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="titulo-seccion">
+
+                <div>
+                    <h2>Ventas</h2>
+                    <p>Registro y consulta de ventas</p>
+                </div>
+
+                <a href="#registrar-venta" class="btn btn-principal">
+                    + Registrar venta
+                </a>
+
+            </div>
+
+
+            <div class="tabla-contenedor">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Venta</th>
+                            <th>Cliente</th>
+                            <th>Fecha</th>
+                            <th>Total</th>
+                            <th>Estado</th>
+                            <th>Pago</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>V-001</td>
+                            <td>Juan Pérez</td>
+                            <td>18/09/2026</td>
+                            <td>$85.000</td>
+                            <td><span class="estado activo">Completada</span></td>
+                            <td>Pagado</td>
+                        </tr>
+
+                        <tr>
+                            <td>V-002</td>
+                            <td>María López</td>
+                            <td>18/09/2026</td>
+                            <td>$42.000</td>
+                            <td><span class="estado pendiente">Pendiente</span></td>
+                            <td>Pendiente</td>
+                        </tr>
+
+                        <tr>
+                            <td>V-003</td>
+                            <td>Carlos Gómez</td>
+                            <td>17/09/2026</td>
+                            <td>$120.000</td>
+                            <td><span class="estado activo">Completada</span></td>
+                            <td>Pagado</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- =====================================================
+         REGISTRAR VENTA
+    ====================================================== -->
+
+    <section id="registrar-venta" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="#ventas" class="btn btn-secundario">
+                ← Ventas
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="form-contenedor grande">
+
+                <div class="titulo-pantalla">
+
+                    <span class="icono">🛒</span>
+
+                    <div>
+                        <h2>Registrar venta</h2>
+                        <p>Crear una nueva venta</p>
+                    </div>
+
+                </div>
+
+
+                <form class="formulario formulario-grid">
+
+                    <div>
+                        <label>Cliente</label>
+                        <select>
+                            <option>Seleccione cliente</option>
+                            <option>Juan Pérez</option>
+                            <option>María López</option>
+                            <option>Carlos Gómez</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Producto</label>
+                        <select>
+                            <option>Seleccione producto</option>
+                            <option>Panela cuadrada</option>
+                            <option>Panela redonda</option>
+                            <option>Panela pulverizada</option>
+                            <option>Panela granulada</option>
+                            <option>Panela en cubos</option>
+                            <option>Panela saborizada</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Cantidad</label>
+                        <input type="number" placeholder="Cantidad">
+                    </div>
+
+                    <div>
+                        <label>Forma de pago</label>
+                        <select>
+                            <option>Seleccione</option>
+                            <option>Efectivo</option>
+                            <option>Transferencia</option>
+                            <option>Tarjeta</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-completo">
+
+                        <label>Observaciones</label>
+
+                        <textarea
+                            placeholder="Observaciones de la venta"
+                        ></textarea>
+
+                    </div>
+
+                </form>
+
+
+                <div class="resumen-venta">
+
+                    <span>Total de la venta</span>
+
+                    <strong>$0</strong>
+
+                </div>
+
+
+                <div class="acciones">
+
+                    <a href="#ventas" class="btn btn-secundario">
+                        Cancelar
+                    </a>
+
+                    <a href="#ventas" class="btn btn-principal">
+                        Registrar venta
+                    </a>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- =====================================================
+         PEDIDOS
+    ====================================================== -->
+
+    <section id="pedidos" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="#dashboard" class="btn btn-secundario">
+                ← Dashboard
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="titulo-seccion">
+
+                <div>
+                    <h2>Pedidos</h2>
+                    <p>Seguimiento y gestión de pedidos</p>
+                </div>
+
+                <a href="#registrar-pedido" class="btn btn-principal">
+                    + Registrar pedido
+                </a>
+
+            </div>
+
+
+            <div class="pedidos-grid">
+
+                <article class="pedido-card">
+
+                    <div class="pedido-header">
+                        <strong>PED-001</strong>
+                        <span class="estado pendiente">En proceso</span>
+                    </div>
+
+                    <h3>Panela cuadrada</h3>
+
+                    <p>
+                        Cantidad solicitada: 100 unidades
+                    </p>
+
+                    <div class="progreso">
+
+                        <div class="barra">
+                            <div class="barra-progreso ancho-70"></div>
+                        </div>
+
+                        <span>70%</span>
+
+                    </div>
+
+                    <small>
+                        Fase: Preparación
+                    </small>
+
+                </article>
+
+
+                <article class="pedido-card">
+
+                    <div class="pedido-header">
+                        <strong>PED-002</strong>
+                        <span class="estado activo">Recibido</span>
+                    </div>
+
+                    <h3>Panela granulada</h3>
+
+                    <p>
+                        Cantidad solicitada: 80 unidades
+                    </p>
+
+                    <div class="progreso">
+
+                        <div class="barra">
+                            <div class="barra-progreso ancho-100"></div>
+                        </div>
+
+                        <span>100%</span>
+
+                    </div>
+
+                    <small>
+                        Fase: Producto recibido
+                    </small>
+
+                </article>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- =====================================================
+         REGISTRAR PEDIDO
+    ====================================================== -->
+
+    <section id="registrar-pedido" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="#pedidos" class="btn btn-secundario">
+                ← Pedidos
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="form-contenedor grande">
+
+                <div class="titulo-pantalla">
+
+                    <span class="icono">🚚</span>
+
+                    <div>
+                        <h2>Registrar pedido</h2>
+                        <p>Crear un nuevo pedido de producto</p>
+                    </div>
+
+                </div>
+
+
+                <form class="formulario formulario-grid">
+
+                    <div>
+                        <label>Producto</label>
+
+                        <select>
+                            <option>Seleccione producto</option>
+                            <option>Panela cuadrada</option>
+                            <option>Panela redonda</option>
+                            <option>Panela pulverizada</option>
+                            <option>Panela granulada</option>
+                            <option>Panela en cubos</option>
+                            <option>Panela saborizada</option>
+                        </select>
+
+                    </div>
+
+                    <div>
+                        <label>Cantidad</label>
+                        <input type="number" placeholder="Cantidad">
+                    </div>
+
+                    <div>
+                        <label>Proveedor</label>
+                        <input type="text" placeholder="Nombre del proveedor">
+                    </div>
+
+                    <div>
+                        <label>Fecha estimada</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="campo-completo">
+
+                        <label>Observaciones</label>
+
+                        <textarea
+                            placeholder="Información adicional del pedido"
+                        ></textarea>
+
+                    </div>
+
+                </form>
+
+
+                <div class="acciones">
+
+                    <a href="#pedidos" class="btn btn-secundario">
+                        Cancelar
+                    </a>
+
+                    <a href="#pedidos" class="btn btn-principal">
+                        Registrar pedido
+                    </a>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- =====================================================
+         PQR
+    ====================================================== -->
+
+    <section id="pqr" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="#dashboard" class="btn btn-secundario">
+                ← Dashboard
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="titulo-seccion">
+
+                <div>
+                    <h2>PQR</h2>
+                    <p>Petición, queja, reclamo y solicitudes</p>
+                </div>
+
+                <a href="#registrar-pqr" class="btn btn-principal">
+                    + Registrar PQR
+                </a>
+
+            </div>
+
+
+            <div class="tabla-contenedor">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Número</th>
+                            <th>Tipo</th>
+                            <th>Asunto</th>
+                            <th>Fecha</th>
+                            <th>Estado</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>PQR-001</td>
+                            <td>Petición</td>
+                            <td>Información de producto</td>
+                            <td>18/09/2026</td>
+                            <td>
+                                <span class="estado pendiente">
+                                    En revisión
+                                </span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>PQR-002</td>
+                            <td>Queja</td>
+                            <td>Pedido recibido incompleto</td>
+                            <td>17/09/2026</td>
+                            <td>
+                                <span class="estado activo">
+                                    Resuelta
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+    <!-- =====================================================
+         REGISTRAR PQR
+    ====================================================== -->
+
+    <section id="registrar-pqr" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="#pqr" class="btn btn-secundario">
+                ← PQR
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="form-contenedor grande">
+
+                <div class="titulo-pantalla">
+
+                    <span class="icono">💬</span>
+
+                    <div>
+                        <h2>Registrar PQR</h2>
+                        <p>Registrar una petición, queja o reclamo</p>
+                    </div>
+
+                </div>
+
+
+                <form class="formulario formulario-grid">
+
+                    <div>
+                        <label>Tipo de solicitud</label>
+
+                        <select>
+                            <option>Seleccione</option>
+                            <option>Petición</option>
+                            <option>Queja</option>
+                            <option>Reclamo</option>
+                            <option>Sugerencia</option>
+                        </select>
+
+                    </div>
+
+                    <div>
+                        <label>Asunto</label>
+                        <input
+                            type="text"
+                            placeholder="Asunto de la solicitud"
+                        >
+                    </div>
+
+                    <div class="campo-completo">
+
+                        <label>Descripción</label>
+
+                        <textarea
+                            placeholder="Describa detalladamente su solicitud"
+                        ></textarea>
+
+                    </div>
+
+                    <div class="campo-completo">
+
+                        <label>Adjuntar evidencia</label>
+
+                        <input type="file">
+
+                    </div>
+
+                </form>
+
+
+                <div class="acciones">
+
+                    <a href="#pqr" class="btn btn-secundario">
+                        Cancelar
+                    </a>
+
+                    <a href="#pqr" class="btn btn-principal">
+                        Registrar PQR
+                    </a>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+</body>
+</html>
