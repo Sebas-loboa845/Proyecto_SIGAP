@@ -1,38 +1,51 @@
- <section id="login" class="pantalla">
+   <!DOCTYPE html>
+   <html lang="es">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../../assets/dashboard/css/styles.css">
+    <link rel="stylesheet" href="../../assets/landing/css/landing_style.css">
+   </head>
+   <body>
+        <section id="login" class="pantalla">
 
-        <div class="login-contenedor">
+    <div class="login-contenedor">
 
-            <div class="login-logo">
-                <span class="logo-icon">S</span>
-                <h1>SIGAP</h1>
-                <p>Inicio de sesión</p>
-            </div>
-
-            <form class="formulario">
-
-                <label>Correo electrónico</label>
-                <input type="email" placeholder="Ingrese su correo">
-
-                <label>Contraseña</label>
-                <input type="password" placeholder="Ingrese su contraseña">
-
-                <a href="#recuperar" class="link">
-                    ¿Olvidó su contraseña?
-                </a>
-
-                <a href="#dashboard" class="btn btn-principal btn-completo">
-                    Ingresar
-                </a>
-
-            </form>
-
-            <p class="registro">
-                ¿No tiene una cuenta?
-                <a href="#registro">Registrarse</a>
-            </p>
-
-            <a href="#inicio" class="volver">← Volver al inicio</a>
-
+        <div class="login-logo">
+            <span class="logo-icon">S</span>
+            <h1>SIGAP</h1>
+            <p>Inicio de sesión</p>
         </div>
 
-    </section>
+        <form class="formulario" id="form-login" action="../roles/admin.html" method="get">
+
+            <label>Correo electrónico</label>
+            <input type="email" id="login-correo" placeholder="Ingrese su correo" required>
+
+            <label>Contraseña</label>
+            <input type="password" id="login-contrasena" placeholder="Ingrese su contraseña" required minlength="6">
+
+            <a href="recuperar_contraseña.html" type="submit" class="link">
+                ¿Olvidó su contraseña?
+            </a>
+
+            <button href="../roles/admin.html" class="btn btn-principal btn-completo">
+                Ingresar
+            </button>
+
+        </form>
+
+        <p class="registro">
+            ¿No tiene una cuenta?
+            <a href="../modules/users/users_register.html">Registrarse</a>
+        </p>
+
+        <a href="../../index.html" type="submit" class="volver">← Volver al inicio</a>
+
+    </div>
+
+</section>
+
+</body>
+</html>

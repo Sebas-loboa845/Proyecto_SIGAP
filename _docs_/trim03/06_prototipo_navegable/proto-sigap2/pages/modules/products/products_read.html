@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="../../../assets/dashboard/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/landing/css/landing_style.css">
+</head>
+<body>
+    <section id="productos" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="../../roles/admin.html" class="btn btn-secundario">
+                ← Dashboard
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="titulo-seccion">
+
+                <div>
+                    <h2>Productos</h2>
+                    <p>Catálogo y administración de productos</p>
+                </div>
+
+                <a href="products_register.html" class="btn btn-principal">
+                    + Registrar producto
+                </a>
+
+            </div>
+
+
+            <div class="filtros">
+
+                <div class="caja-buscar">
+        <input type="text" placeholder="🔍 Buscar producto...">
+        <button type="button" class="btn-lupa">
+            <svg xmlns="http://w3.org" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+        </button>
+    </div>
+
+                <select>
+                    <option>Todos los tipos</option>
+                    <option>Panela cuadrada</option>
+                    <option>Panela redonda</option>
+                    <option>Panela pulverizada</option>
+                    <option>Panela granulada</option>
+                    <option>Panela en cubos</option>
+                    <option>Panela saborizada</option>
+                </select>
+
+                <select>
+                    <option>Todos los estados</option>
+                    <option>Disponible</option>
+                    <option>Agotado</option>
+                    <option>Inactivo</option>
+                </select>
+
+            </div>
+
+
+            <div class="productos-grid">
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-001</span>
+                        <h3>Panela cuadrada</h3>
+                        <p>Panela tradicional de bloque cuadrado.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$5.000</strong>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-002</span>
+                        <h3>Panela redonda</h3>
+                        <p>Panela tradicional en presentación redonda.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$5.500</strong>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-003</span>
+                        <h3>Panela pulverizada</h3>
+                        <p>Panela pulverizada de fácil preparación.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$8.000</strong>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-004</span>
+                        <h3>Panela granulada</h3>
+                        <p>Panela granulada para bebidas y preparaciones.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$7.500</strong>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-005</span>
+                        <h3>Panela en cubos</h3>
+                        <p>Panela presentada en pequeños cubos.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$6.500</strong>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+
+                <article class="producto-card">
+
+                    <div class="producto-imagen">
+                        🟫
+                    </div>
+
+                    <div class="producto-info">
+                        <span class="codigo">PROD-006</span>
+                        <h3>Panela saborizada</h3>
+                        <p>Panela con diferentes sabores y presentaciones.</p>
+
+                        <div class="producto-detalles">
+                            <strong>$9.000</strong>
+                        </div>
+
+                        <span class="estado activo">
+                            Disponible
+                        </span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </main>
+
+    </section>
+</body>
+</html>

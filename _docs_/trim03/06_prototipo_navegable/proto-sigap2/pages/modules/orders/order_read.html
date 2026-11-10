@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="../../../assets/dashboard/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/landing/css/landing_style.css">
+</head>
+<body>
+    <!-- =====================================================
+         PEDIDOS
+    ====================================================== -->
+
+    <section id="pedidos" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="../../roles/admin.html" class="btn btn-secundario">
+                ← Dashboard
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="titulo-seccion">
+
+                <div>
+                    <h2>Pedidos</h2>
+                    <p>Seguimiento y gestión de pedidos</p>
+                </div>
+
+                <a href="order_register.html" class="btn btn-principal">
+                    + Registrar pedido
+                </a>
+
+            </div>
+
+
+            <div class="pedidos-grid">
+
+                <article class="pedido-card">
+
+                    <div class="pedido-header">
+                        <strong>PED-001</strong>
+                        <span class="estado pendiente">En proceso</span>
+                    </div>
+
+                    <h3>Panela cuadrada</h3>
+
+                    <p>
+                        Cantidad solicitada: 100 unidades
+                    </p>
+
+                    <div class="progreso">
+
+                        <div class="barra">
+                            <div class="barra-progreso ancho-70"></div>
+                        </div>
+
+                        <span>70%</span>
+
+                    </div>
+
+                    <small>
+                        Fase: Preparación
+                    </small>
+
+                </article>
+
+
+                <article class="pedido-card">
+
+                    <div class="pedido-header">
+                        <strong>PED-002</strong>
+                        <span class="estado activo">Recibido</span>
+                    </div>
+
+                    <h3>Panela granulada</h3>
+
+                    <p>
+                        Cantidad solicitada: 80 unidades
+                    </p>
+
+                    <div class="progreso">
+
+                        <div class="barra">
+                            <div class="barra-progreso ancho-100"></div>
+                        </div>
+
+                        <span>100%</span>
+
+                    </div>
+
+                    <small>
+                        Fase: Producto recibido
+                    </small>
+
+                </article>
+
+            </div>
+
+        </main>
+
+    </section>
+</body>
+</html>

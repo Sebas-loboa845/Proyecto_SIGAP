@@ -442,3 +442,37 @@ footer {
     font-size: 13px;
     margin-top: 5px;
 }
+/*FILTRO DE BUSQUEDA EN PRODUCTOS*/
+.caja-buscar {
+    position: relative;
+    display: inline-block;
+}
+
+/* El input ocupa el espacio normal */
+.caja-buscar input {
+    width: 220px; /* Puedes cambiar el ancho a tu gusto */
+    padding: 8px 35px 8px 12px; /* 35px a la derecha para dejarle espacio libre a la lupa */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* El botón se ancla magnéticamente al borde derecho interno */
+.btn-lupa {
+    position: absolute;
+    right: 10px;        /* Distancia desde el borde derecho */
+    top: 50%;           /* Lo centra verticalmente */
+    transform: translateY(-50%); /* Ajuste perfecto de centrado */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.btn-lupa:hover {
+    color: #000;
+}

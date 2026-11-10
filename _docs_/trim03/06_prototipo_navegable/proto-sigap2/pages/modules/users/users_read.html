@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="../../../assets/dashboard/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/landing/css/landing_style.css">
+</head>
+<body>
+    <!-- =====================================================
+         USUARIOS
+    ====================================================== -->
+
+    <section id="usuarios" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="../../roles/admin.html" class="btn btn-secundario">
+                ← Dashboard
+            </a>
+
+        </header>
+
+        <main class="contenido-app">
+
+            <div class="titulo-seccion">
+
+                <div>
+                    <h2>Gestión de usuarios</h2>
+                    <p>Administración de usuarios registrados</p>
+                </div>
+
+                <a href="#registro" class="btn btn-principal">
+                    + Registrar usuario
+                </a>
+
+            </div>
+
+
+            <div class="tabla-contenedor">
+
+                <div class="busqueda">
+                    <input
+                        type="text"
+                        placeholder="🔎 Buscar usuario..."
+                    >
+                </div>
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Rol</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>001</td>
+                            <td>Juan Pérez</td>
+                            <td>juan@email.com</td>
+                            <td>Administrador</td>
+                            <td><span class="estado activo">Activo</span></td>
+                            <td>👁️ ✏️</td>
+                        </tr>
+
+                        <tr>
+                            <td>002</td>
+                            <td>María López</td>
+                            <td>maria@email.com</td>
+                            <td>Empleado</td>
+                            <td><span class="estado activo">Activo</span></td>
+                            <td>👁️ ✏️</td>
+                        </tr>
+
+                        <tr>
+                            <td>003</td>
+                            <td>Carlos Gómez</td>
+                            <td>carlos@email.com</td>
+                            <td>Cliente</td>
+                            <td><span class="estado inactivo">Inactivo</span></td>
+                            <td>👁️ ✏️</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </main>
+
+    </section>
+</body>
+</html>
