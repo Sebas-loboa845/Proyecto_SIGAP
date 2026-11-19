@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Producto</title>
+    <link rel="stylesheet" href="../../../assets/dashboard/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/landing/css/landing_style.css">
+</head>
+<body>
+    <!-- =====================================================
+         REGISTRAR PRODUCTO
+    ====================================================== -->
+
+    <section id="registrar-producto" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="products_read.html" class="btn btn-secundario">
+                ← Productos
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="form-contenedor grande">
+
+                <div class="titulo-pantalla">
+                    <span class="icono">📦</span>
+
+                    <div>
+                        <h2>Registrar producto</h2>
+                        <p>Agregar un nuevo producto al catálogo</p>
+                    </div>
+                </div>
+
+
+                <form class="formulario formulario-grid">
+
+                    <div>
+                        <label>Código del producto</label>
+                        <input type="text" placeholder="PROD-000">
+                    </div>
+
+                    <div>
+                        <label>Nombre del producto</label>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+
+                    <div>
+                        <label>Tipo de panela</label>
+
+                        <select>
+                            <option>Seleccione</option>
+                            <option>Panela cuadrada</option>
+                            <option>Panela redonda</option>
+                            <option>Panela pulverizada</option>
+                            <option>Panela granulada</option>
+                            <option>Panela en cubos</option>
+                            <option>Panela saborizada</option>
+                        </select>
+
+                    </div>
+
+                    <div>
+                        <label>Precio</label>
+                        <input type="number" placeholder="$">
+                    </div>
+
+                    <div>
+                        <label>Cantidad inicial</label>
+                        <input type="number" placeholder="Cantidad">
+                    </div>
+
+                    <div>
+                        <label>Estado</label>
+
+                        <select>
+                            <option>Disponible</option>
+                            <option>Agotado</option>
+                            <option>Inactivo</option>
+                        </select>
+
+                    </div>
+
+                    <div class="campo-completo">
+
+                        <label>Descripción</label>
+
+                        <textarea
+                            placeholder="Descripción del producto"
+                        ></textarea>
+
+                    </div>
+
+                </form>
+
+
+                <div class="acciones">
+
+                    <a href="products_read.html" class="btn btn-secundario">
+                        Cancelar
+                    </a>
+
+                    <a href="products_read.html" class="btn btn-principal">
+                        Registrar producto
+                    </a>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </section>
+</body>
+</html>

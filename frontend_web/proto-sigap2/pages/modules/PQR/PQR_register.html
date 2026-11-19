@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar PQR</title>
+    <link rel="stylesheet" href="../../../assets/dashboard/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/landing/css/landing_style.css">
+</head>
+<body>
+
+    <section id="registrar-pqr" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="PQR_read.html" class="btn btn-secundario">
+                ← PQR
+            </a>
+
+        </header>
+
+
+        <main class="contenido-app">
+
+            <div class="form-contenedor grande">
+
+                <div class="titulo-pantalla">
+
+                    <span class="icono">💬</span>
+
+                    <div>
+                        <h2>Registrar PQR</h2>
+                        <p>Registrar una petición, queja o reclamo</p>
+                    </div>
+
+                </div>
+
+
+                <form class="formulario formulario-grid">
+
+                    <div>
+                        <label>Tipo de solicitud</label>
+
+                        <select>
+                            <option>Seleccione</option>
+                            <option>Petición</option>
+                            <option>Queja</option>
+                            <option>Reclamo</option>
+                            <option>Sugerencia</option>
+                        </select>
+
+                    </div>
+
+                    <div>
+                        <label>Asunto</label>
+                        <input
+                            type="text"
+                            placeholder="Asunto de la solicitud"
+                        >
+                    </div>
+
+                    <div class="campo-completo">
+
+                        <label>Descripción</label>
+
+                        <textarea
+                            placeholder="Describa detalladamente su solicitud"
+                        ></textarea>
+
+                    </div>
+
+                    <div class="campo-completo">
+
+                        <label>Adjuntar evidencia</label>
+
+                        <input type="file">
+
+                    </div>
+
+                </form>
+
+
+                <div class="acciones">
+
+                    <a href="PQR_read.html" class="btn btn-secundario">
+                        Cancelar
+                    </a>
+
+                    <a href="PQR_read.html" class="btn btn-principal">
+                        Registrar PQR
+                    </a>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </section>
+</body>
+</html>
