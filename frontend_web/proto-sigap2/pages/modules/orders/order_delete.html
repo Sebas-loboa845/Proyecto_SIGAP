@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Pedido</title>
+    <link rel="stylesheet" href="../../../assets/dashboard/css/styles.css">
+    <link rel="stylesheet" href="../../../assets/landing/css/landing_style.css">
+</head>
+<body>
+
+    <!-- =====================================================
+         ELIMINAR PEDIDO
+    ====================================================== -->
+
+    <section id="eliminar-pedido" class="pantalla pantalla-app">
+
+        <header class="app-header">
+
+            <div class="logo">
+                <span class="logo-icon pequeño">S</span>
+                <h1>SIGAP</h1>
+            </div>
+
+            <a href="order_read.html" class="btn btn-secundario">
+                ← Pedidos
+            </a>
+
+        </header>
+
+        <main class="contenido-app">
+
+            <div class="form-contenedor grande">
+
+                <div class="titulo-pantalla">
+
+                    <span class="icono">🗑️</span>
+
+                    <div>
+                        <h2>Eliminar pedido</h2>
+                        <p>Eliminar un pedido existente del sistema</p>
+                    </div>
+
+                </div>
+
+                <form class="formulario formulario-grid">
+
+                    <div>
+                        <label>Producto</label>
+                        <input type="text" value="Panela cuadrada" readonly>
+                    </div>
+
+                    <div>
+                        <label>Cantidad</label>
+                        <input type="number" value="100" readonly>
+                    </div>
+
+                    <div>
+                        <label>Proveedor</label>
+                        <input type="text" value="Proveedor principal" readonly>
+                    </div>
+
+                    <div>
+                        <label>Fecha estimada</label>
+                        <input type="date" value="2026-12-15" readonly>
+                    </div>
+
+                    <div class="campo-completo">
+
+                        <label>Observaciones</label>
+
+                        <textarea readonly>Pedido de panela para abastecimiento de inventario.</textarea>
+
+                    </div>
+
+                </form>
+
+                <div class="acciones">
+
+                    <a href="order_read.html" class="btn btn-secundario">
+                        Cancelar
+                    </a>
+
+                    <a href="order_read.html" class="btn btn-principal">
+                        Confirmar eliminación
+                    </a>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </section>
+
+</body>
+</html>
