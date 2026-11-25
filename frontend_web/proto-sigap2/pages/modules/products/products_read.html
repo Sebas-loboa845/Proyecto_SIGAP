@@ -44,15 +44,12 @@
             <div class="filtros">
 
                 <div class="caja-buscar">
-        <input type="text" placeholder="🔍 Buscar producto...">
+        <input type="text" placeholder="🔍 Buscar producto..." data-product-search>
         <button type="button" class="btn-lupa">
-            <svg xmlns="http://w3.org" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-            </svg>
         </button>
     </div>
 
-                <select>
+                <select data-product-type>
                     <option>Todos los tipos</option>
                     <option>Panela cuadrada</option>
                     <option>Panela redonda</option>
@@ -62,7 +59,7 @@
                     <option>Panela saborizada</option>
                 </select>
 
-                <select>
+                <select data-product-status>
                     <option>Todos los estados</option>
                     <option>Disponible</option>
                     <option>Agotado</option>
@@ -72,7 +69,7 @@
             </div>
 
 
-            <div class="productos-grid">
+            <div class="productos-grid" data-crud-list="products">
 
                 <article class="producto-card">
 
@@ -288,5 +285,6 @@
         </main>
 
     </section>
+    <script src="../../../assets/landing/js/script.js"></script>
 </body>
 </html>

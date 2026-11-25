@@ -42,41 +42,41 @@
                     </div>
                 </div>
 
-                <form class="formulario formulario-grid">
+                <form id="product-delete-form" class="formulario formulario-grid" data-crud-form="product-delete">
 
                     <div>
                         <label>Código del producto</label>
-                        <input type="text" placeholder="PROD-000">
+                        <input type="text" placeholder="PROD-000" data-field="code" readonly required>
                     </div>
 
                     <div>
                         <label>Nombre del producto</label>
-                        <input type="text" placeholder="Nombre del producto">
+                        <input type="text" placeholder="Nombre del producto" data-field="name" required>
                     </div>
 
                     <div>
                         <label>Tipo de panela</label>
-                        <input type="text" placeholder="Tipo de panela">
+                        <input type="text" placeholder="Tipo de panela" data-field="type" required>
                     </div>
 
                     <div>
                         <label>Precio</label>
-                        <input type="number" placeholder="$">
+                        <input type="number" placeholder="$" data-field="price" min="0">
                     </div>
 
                     <div>
                         <label>Cantidad</label>
-                        <input type="number" placeholder="Cantidad">
+                        <input type="number" placeholder="Cantidad" data-field="quantity" min="0">
                     </div>
 
                     <div>
                         <label>Estado</label>
-                        <input type="text" placeholder="Estado">
+                        <input type="text" placeholder="Estado" data-field="status">
                     </div>
 
                     <div class="campo-completo">
                         <label>Descripción</label>
-                        <textarea placeholder="Descripción del producto"></textarea>
+                        <textarea placeholder="Descripción del producto" data-field="description"></textarea>
                     </div>
 
                 </form>
@@ -98,6 +98,6 @@
         </main>
 
     </section>
-
+    <script src="../../../assets/landing/js/script.js"></script>
 </body>
 </html>

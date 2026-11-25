@@ -42,22 +42,22 @@
                     </div>
                 </div>
 
-                <form class="formulario formulario-grid">
+                <form id="product-update-form" class="formulario formulario-grid" data-crud-form="product-update">
 
                     <div>
                         <label>Código del producto</label>
-                        <input type="text" value="PROD-001">
+                        <input type="text" value="PROD-001" data-field="code" required>
                     </div>
 
                     <div>
                         <label>Nombre del producto</label>
-                        <input type="text" value="Panela tradicional">
+                        <input type="text" value="Panela tradicional" data-field="name" required>
                     </div>
 
                     <div>
                         <label>Tipo de panela</label>
 
-                        <select>
+                        <select data-field="type">
                             <option>Seleccione</option>
                             <option selected>Panela cuadrada</option>
                             <option>Panela redonda</option>
@@ -71,18 +71,18 @@
 
                     <div>
                         <label>Precio</label>
-                        <input type="number" value="5000">
+                        <input type="number" value="5000" data-field="price" min="0">
                     </div>
 
                     <div>
                         <label>Cantidad</label>
-                        <input type="number" value="100">
+                        <input type="number" value="100" data-field="quantity" min="0">
                     </div>
 
                     <div>
                         <label>Estado</label>
 
-                        <select>
+                        <select data-field="status">
                             <option selected>Disponible</option>
                             <option>Agotado</option>
                             <option>Inactivo</option>
@@ -93,7 +93,7 @@
                     <div class="campo-completo">
                         <label>Descripción</label>
 
-                        <textarea>Panela tradicional de presentación cuadrada.</textarea>
+                        <textarea data-field="description">Panela tradicional de presentación cuadrada.</textarea>
 
                     </div>
 
@@ -105,7 +105,7 @@
                         Cancelar
                     </a>
 
-                    <a href="products_read.html" class="btn btn-principal">
+                    <a href="products_read.html" type="button" class="btn btn-principal" data-submit="product-update">
                         Guardar cambios
                     </a>
 
@@ -117,5 +117,6 @@
 
     </section>
 
+    <script src="../../../assets/landing/js/script.js"></script>
 </body>
 </html>

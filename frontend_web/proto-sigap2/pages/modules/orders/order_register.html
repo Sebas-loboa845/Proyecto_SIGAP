@@ -44,12 +44,12 @@
                 </div>
 
 
-                <form class="formulario formulario-grid">
+                <form id="order-create-form" class="formulario formulario-grid" data-crud-form="order-create">
 
                     <div>
                         <label>Producto</label>
 
-                        <select>
+                        <select data-field="product">
                             <option>Seleccione producto</option>
                             <option>Panela cuadrada</option>
                             <option>Panela redonda</option>
@@ -63,17 +63,17 @@
 
                     <div>
                         <label>Cantidad</label>
-                        <input type="number" placeholder="Cantidad">
+                        <input type="number" placeholder="Cantidad" data-field="quantity" min="0">
                     </div>
 
                     <div>
                         <label>Proveedor</label>
-                        <input type="text" placeholder="Nombre del proveedor">
+                        <input type="text" placeholder="Nombre del proveedor" data-field="supplier" required>
                     </div>
 
                     <div>
                         <label>Fecha estimada</label>
-                        <input type="date">
+                        <input type="date" data-field="date" required>
                     </div>
 
                     <div class="campo-completo">
@@ -82,7 +82,7 @@
 
                         <textarea
                             placeholder="Información adicional del pedido"
-                        ></textarea>
+                         data-field="observations"></textarea>
 
                     </div>
 
@@ -95,7 +95,7 @@
                         Cancelar
                     </a>
 
-                    <a href="order_read.html" class="btn btn-principal">
+                    <a href="order_read.html" type="button" class="btn btn-principal" data-submit="order-delete">
                         Registrar pedido
                     </a>
 
@@ -106,5 +106,6 @@
         </main>
 
     </section>
+    <script src="../../../assets/landing/js/script.js"></script>
 </body>
 </html>

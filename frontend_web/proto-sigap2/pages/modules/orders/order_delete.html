@@ -44,33 +44,33 @@
 
                 </div>
 
-                <form class="formulario formulario-grid">
+                <form id="order-delete-form" class="formulario formulario-grid" data-crud-form="order-delete">
 
                     <div>
                         <label>Producto</label>
-                        <input type="text" value="Panela cuadrada" readonly>
+                        <input type="text" value="Panela cuadrada" readonly data-field="product" required>
                     </div>
 
                     <div>
                         <label>Cantidad</label>
-                        <input type="number" value="100" readonly>
+                        <input type="number" value="100" readonly data-field="quantity" min="0">
                     </div>
 
                     <div>
                         <label>Proveedor</label>
-                        <input type="text" value="Proveedor principal" readonly>
+                        <input type="text" value="Proveedor principal" readonly data-field="supplier" required>
                     </div>
 
                     <div>
                         <label>Fecha estimada</label>
-                        <input type="date" value="2026-12-15" readonly>
+                        <input type="date" value="2026-12-15" readonly data-field="date" required>
                     </div>
 
                     <div class="campo-completo">
 
                         <label>Observaciones</label>
 
-                        <textarea readonly>Pedido de panela para abastecimiento de inventario.</textarea>
+                        <textarea readonly data-field="observations">Pedido de panela para abastecimiento de inventario.</textarea>
 
                     </div>
 
@@ -82,7 +82,7 @@
                         Cancelar
                     </a>
 
-                    <a href="order_read.html" class="btn btn-principal">
+                    <a href="order_read.html" type="button" class="btn btn-principal" data-submit="order-delete">
                         Confirmar eliminación
                     </a>
 
@@ -94,5 +94,6 @@
 
     </section>
 
+    <script src="../../../assets/landing/js/script.js"></script>
 </body>
 </html>
